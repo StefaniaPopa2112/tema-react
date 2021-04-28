@@ -21,7 +21,7 @@ const AddLightbox = (WrappedComponent: React.FC<ExtendedComponentProps>) => {
     
         const handlePlay = () => setState(prevState => ({ ...prevState, lightboxOpen: true}));
         
-        const onLightboxClose = () => setState({ lightboxOpen: true, lightboxCurrentImage: 0 });
+        const onLightboxClose = () => setState({ lightboxOpen: false, lightboxCurrentImage: 0 });
     
         const goToNextImage = () => setState(prevState => ({ 
             ...prevState, 
